@@ -7,7 +7,6 @@ import {
         redo,
         prosemirrorJSONToYDoc
 } from 'y-prosemirror';
-import type { Socket } from 'socket.io-client';
 import type { Awareness } from 'y-protocols/awareness';
 import type { SessionUser } from '$lib/stores';
 import { Editor, Extension } from '@tiptap/core';
@@ -47,7 +46,7 @@ export class SocketIOCollaborationProvider {
 
         constructor(
                 private readonly documentId: string,
-                private readonly socket: Socket,
+                private readonly socket: any,
                 private readonly user: SessionUser,
                 private readonly initialContent: string | null = null
         ) {
