@@ -30,16 +30,6 @@ export default defineConfig({
                 port: 5000,
                 allowedHosts: true,
                 strictPort: false,
-                hmr: true,
-                proxy: {
-                        '/api': {
-                                target: 'http://localhost:3000',
-                                changeOrigin: true
-                        },
-                        '/health': {
-                                target: 'http://localhost:3000',
-                                changeOrigin: true
-                        }
-                }
+                hmr: true
         }
 });
