@@ -1,0 +1,6 @@
+node_modules/
+vite-main/node_modules/
+backend/node_modules/
+vite-main/.svelte-kit/
+vite-main/build/
+.DS_Store
